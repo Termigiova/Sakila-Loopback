@@ -1,0 +1,57 @@
+{
+  "name": "SalesByStore",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "sakila",
+      "table": "sales_by_store"
+    }
+  },
+  "properties": {
+    "store": {
+      "type": "String",
+      "required": false,
+      "length": 101,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "store",
+        "dataType": "varchar",
+        "dataLength": 101,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "manager": {
+      "type": "String",
+      "required": false,
+      "length": 91,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "manager",
+        "dataType": "varchar",
+        "dataLength": 91,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "totalSales": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 27,
+      "scale": 2,
+      "mysql": {
+        "columnName": "total_sales",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 27,
+        "dataScale": 2,
+        "nullable": "Y"
+      }
+    }
+  }
+}

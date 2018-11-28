@@ -1,0 +1,42 @@
+{
+  "name": "SalesByFilmCategory",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "sakila",
+      "table": "sales_by_film_category"
+    }
+  },
+  "properties": {
+    "category": {
+      "type": "String",
+      "required": true,
+      "length": 25,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "category",
+        "dataType": "varchar",
+        "dataLength": 25,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "totalSales": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 27,
+      "scale": 2,
+      "mysql": {
+        "columnName": "total_sales",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 27,
+        "dataScale": 2,
+        "nullable": "Y"
+      }
+    }
+  }
+}
